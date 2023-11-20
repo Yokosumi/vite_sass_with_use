@@ -1,14 +1,3 @@
-@mixin alert-text($color: #555, $border: 2px solid #333) {
-  background-color: $color;
-  color: black;
-  font-variant: small-caps;
-  padding: 0.5rem;
-  width: fit-content;
-  border: $border;
-  background-color: $color;
-  @content;
-}
-
 @mixin ball($bgcolor, $size) {
   background-color: $bgcolor;
   width: $size;
