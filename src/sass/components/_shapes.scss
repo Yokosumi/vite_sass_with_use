@@ -1,25 +1,26 @@
+@use "../abstracts/mixins" as mx;
 $percent: 50;
 %shadow {
   box-shadow: 8px 8px 8px #555;
 }
 
 .ball-001 {
-  @include ball(lighten(navy, 50), 4rem);
+  @include mx.ball(lighten(navy, 50), 4rem);
   @extend %shadow;
 }
 
 .ball-002 {
-  @include ball(darken(red, $percent), 2rem);
+  @include mx.ball(darken(red, $percent), 2rem);
   @extend %shadow;
 }
 
 .ball-003 {
-  @include ball(adjust-hue(navy, -80deg), 3rem);
+  @include mx.ball(adjust-hue(navy, -80deg), 3rem);
   @extend %shadow;
 }
 
 .ball-004 {
-  @include ball(mix(blue, red), 1rem);
+  @include mx.ball(mix(blue, red), 1rem);
 }
 
 $colors: purple, orchid, goldenrod, hotpink;

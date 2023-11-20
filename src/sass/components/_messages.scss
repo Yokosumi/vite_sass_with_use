@@ -1,18 +1,19 @@
-@use "../abstracts/mixins";
+@use "../abstracts/mixins" as mx;
+
 .error-text {
-  @include alert-text(tomato);
+  @include mx.alert-text(tomato);
 }
 
 .info-text {
-  @include alert-text(lightblue, 2px dashed navy);
+  @include mx.alert-text(lightblue, 2px dashed navy);
 }
 
 .normal-text {
-  @include alert-text(white, null);
+  @include mx.alert-text(white, null);
 }
 
 .faded-text {
-  @include alert-text {
+  @include mx.alert-text {
     opacity: 0.5;
     border: 0px;
   }
