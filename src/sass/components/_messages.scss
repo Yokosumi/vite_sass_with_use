@@ -1,4 +1,4 @@
-@import "../abstracts/mixins";
+@use "../abstracts/mixins";
 .error-text {
   @include alert-text(tomato);
 }
