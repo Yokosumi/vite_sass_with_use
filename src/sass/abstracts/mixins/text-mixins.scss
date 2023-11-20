@@ -1,3 +1,4 @@
+@use "../maps.scss";
 @mixin alert-text($color: #555, $border: 2px solid #333) {
   background-color: $color;
   color: black;
@@ -7,4 +8,10 @@
   border: $border;
   background-color: $color;
   @content;
+}
+
+@mixin user-styles($colors: primary, $sizes: medium, $fonts: sans-serif) {
+  color: $colors;
+  margin: $sizes;
+  font-family: $fonts;
 }

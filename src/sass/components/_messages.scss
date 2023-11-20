@@ -20,7 +20,7 @@
 }
 
 .user-text {
-  color: map-get($colors, primary);
+  color: map-get($colors, secondary);
   margin: map-get($sizes, medium);
   font-family: map-get($fonts, fontMonoSpace);
   font-size: map-get($sizes, medium);
