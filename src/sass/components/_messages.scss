@@ -18,3 +18,20 @@
     border: 0px;
   }
 }
+
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  accent: #e74c3c,
+);
+
+$sizes: (
+  small: 2rem,
+  medium: 5rem,
+  large: 8rem,
+);
+
+.user-text {
+  color: map-get($colors, primary);
+  margin: map-get($sizes, large);
+}
