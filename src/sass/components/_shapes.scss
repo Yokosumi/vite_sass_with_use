@@ -1,4 +1,5 @@
 @use "../abstracts/mixins" as mx;
+@use "../base/variables" as *;
 $percent: 50;
 %shadow {
   box-shadow: 8px 8px 8px #555;
@@ -22,8 +23,6 @@ $percent: 50;
 .ball-004 {
   @include mx.ball(mix(blue, red), 1rem);
 }
-
-$colors: purple, orchid, goldenrod, hotpink;
 
 @for $i from 1 through length($colors) {
   .box-#{$i} {
