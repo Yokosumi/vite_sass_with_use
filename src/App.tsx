@@ -1,3 +1,4 @@
+import { Title } from "./components/Title";
 import "./sass/main.scss";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <p className="rectangle-hotpink spacing"></p>
       <p className="user-text">Test</p>
       <p className="error-message">Error</p>
+      <Title />
     </>
   );
 }
