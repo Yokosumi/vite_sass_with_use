@@ -21,11 +21,19 @@
   }
 }
 
+// .user-text {
+//   color: map-get($testcolors, secondary);
+//   margin: map-get($sizes, medium);
+//   font-family: map-get($fonts, fontMonoSpace);
+//   font-size: map-get($sizes, medium);
+// }
+
 .user-text {
-  color: map-get($testcolors, secondary);
   margin: map-get($sizes, medium);
-  font-family: map-get($fonts, fontMonoSpace);
+  padding: 0.5rem;
   font-size: map-get($sizes, medium);
+  color: lighten($primary-color, 30);
+  box-shadow: 8px 8px 8px darken($primary-color, 20);
 }
 
 .error-message {
