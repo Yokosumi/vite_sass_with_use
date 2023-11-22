@@ -26,6 +26,7 @@ function App() {
       <p className="rectangle-goldenrod spacing"></p>
       <p className="rectangle-hotpink spacing"></p>
       <p className="user-text">Test</p>
+      <p className="error-message">Error</p>
     </>
   );
 }

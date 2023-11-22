@@ -1,5 +1,7 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/maps" as *;
+@use "../base/variables" as *;
+
 .error-text {
   @include mx.alert-text(tomato);
 }
@@ -20,8 +22,13 @@
 }
 
 .user-text {
-  color: map-get($colors, secondary);
+  color: map-get($testcolors, secondary);
   margin: map-get($sizes, medium);
   font-family: map-get($fonts, fontMonoSpace);
   font-size: map-get($sizes, medium);
+}
+
+.error-message {
+  color: $errorColor;
+  font-size: 5rem;
 }
